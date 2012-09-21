@@ -15,6 +15,10 @@ For all routes.
     checkMobile = require('express-mobile-detection');
     ...
     app.use(checkMobile());
+    ...
+    // Within any route.
+      console.log(req.mobile);
+      console.log(req.tablet);
 
 For single routes.
 
