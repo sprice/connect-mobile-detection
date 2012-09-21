@@ -12,7 +12,7 @@ It is not always wise to rely on useragents to determine mobile and tablet clien
 
 For all routes.
 
-    checkMobile = require('express-mobile-detection');
+    var checkMobile = require('express-mobile-detection');
     ...
     app.use(checkMobile());
     ...
@@ -22,7 +22,7 @@ For all routes.
 
 For single routes.
 
-    checkMobile = require('express-mobile-detection');
+    var checkMobile = require('express-mobile-detection');
     ...
     app.get('/', checkMobile(), function (req, res) {
       console.log(req.mobile);
