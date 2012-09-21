@@ -28,3 +28,4 @@ For single routes.
 Licensed MIT unless otherwise noted. See LICENSE file.
 
 This module uses public domain code from Chad Smith's [detectmobilebrowsers.com](http://detectmobilebrowsers.com/) project.
+
