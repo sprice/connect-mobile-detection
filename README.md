@@ -1,5 +1,7 @@
 # Express Mobile Detection
 
+[![Build Status](https://secure.travis-ci.org/sprice/express-mobile-detection.png)](http://travis-ci.org/sprice/express-mobile-detection)
+
 [Express](http://expressjs.com/) middleware which uses the client useragent to detect mobile and tablet devices.
 
 ## Note
@@ -28,4 +30,3 @@ For single routes.
 Licensed MIT unless otherwise noted. See LICENSE file.
 
 This module uses public domain code from Chad Smith's [detectmobilebrowsers.com](http://detectmobilebrowsers.com/) project.
-
