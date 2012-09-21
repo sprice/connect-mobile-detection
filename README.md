@@ -4,6 +4,8 @@
 
 [Express](http://expressjs.com/) middleware which uses the client useragent to detect mobile and tablet devices.
 
+Adds `mobile` and `tablet` properties to `req`.
+
 ## Note
 
 It is not always wise to rely on useragents to determine mobile and tablet clients.
