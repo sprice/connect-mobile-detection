@@ -1,0 +1,21 @@
+{
+  "name": "express-mobile-detection",
+  "version": "0.0.1",
+  "description": "Express middleware to check useragent for mobile or tablet devices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R list ./test/test.js"
+  },
+  "author": "Shawn Price <shawnp@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.4.2"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "useragent",
+    "mobile",
+    "tablet"
+  ]
+}
