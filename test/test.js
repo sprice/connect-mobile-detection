@@ -11,6 +11,21 @@ function MockResponse() {}
 
 function next() {}
 
+describe('Clients with no useragents', function () {
+
+  it('should not fail', function (done) {
+
+    var req = new MockRequest();
+    var res = new MockResponse();
+    req.headers['user-agent'] = undefined;
+
+    mobile_detection(req, res, next);
+
+    done();
+
+  });
+});
+
 describe('Mobile useragents', function () {
 
   it('should be mobile but not tablet', function (done) {
