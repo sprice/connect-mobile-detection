@@ -1,10 +1,10 @@
-# Express Mobile Detection
+# Connect Mobile Detection
 
-[![Build Status](https://secure.travis-ci.org/sprice/express-mobile-detection.png)](http://travis-ci.org/sprice/express-mobile-detection)
+[![Build Status](https://secure.travis-ci.org/sprice/connect-mobile-detection.png)](http://travis-ci.org/sprice/connect-mobile-detection)
 
-[Express](http://expressjs.com/) middleware which uses the client useragent to detect mobile and tablet devices.
+[Connect](http://www.senchalabs.org/connect/) middleware which uses the client useragent to detect mobile and tablet devices.
 
-Adds `mobile` and `tablet` properties to `req`.
+Adds boolean `mobile` and `tablet` properties to `req`.
 
 ## Note
 
@@ -14,7 +14,7 @@ It is not always wise to rely on useragents to determine mobile and tablet clien
 
 For all routes.
 
-    var checkMobile = require('express-mobile-detection');
+    var checkMobile = require('connect-mobile-detection');
     ...
     app.use(checkMobile());
     ...
@@ -22,9 +22,9 @@ For all routes.
       console.log(req.mobile);
       console.log(req.tablet);
 
-For single routes.
+For single routes using [Express](http://expressjs.com/).
 
-    var checkMobile = require('express-mobile-detection');
+    var checkMobile = require('connect-mobile-detection');
     ...
     app.get('/', checkMobile(), function (req, res) {
       console.log(req.mobile);

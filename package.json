@@ -1,7 +1,7 @@
 {
-  "name": "express-mobile-detection",
-  "version": "0.0.2",
-  "description": "Express middleware to check useragent for mobile or tablet devices.",
+  "name": "connect-mobile-detection",
+  "version": "0.0.3",
+  "description": "Connect middleware to check useragent for mobile or tablet devices.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -R list ./test/test.js"
@@ -12,7 +12,7 @@
     "mocha": "~1.4.2"
   },
   "keywords": [
-    "express",
+    "connect",
     "middleware",
     "useragent",
     "mobile",

@@ -1,1 +1,1 @@
-module.exports = require('./lib/express-mobile-detection');
+module.exports = require('./lib/connect-mobile-detection');
