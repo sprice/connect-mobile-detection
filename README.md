@@ -12,18 +12,20 @@ It is not always wise to rely on useragents to determine mobile and tablet clien
 
 ## Usage
 
-For all routes.
+For all routes using Connect or [Express](http://expressjs.com/).
 
+    ...
     var checkMobile = require('connect-mobile-detection');
     ...
     app.use(checkMobile());
     ...
-    // Within any route.
-      console.log(req.mobile);
-      console.log(req.tablet);
+    // inside any route
+    console.log(req.mobile);
+    console.log(req.tablet);
 
-For single routes using [Express](http://expressjs.com/).
+For single routes using Express.
 
+    ...
     var checkMobile = require('connect-mobile-detection');
     ...
     app.get('/', checkMobile(), function (req, res) {
