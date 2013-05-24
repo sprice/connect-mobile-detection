@@ -1,6 +1,6 @@
 {
   "name": "connect-mobile-detection",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Connect middleware to check useragent for mobile or tablet devices.",
   "main": "index.js",
   "scripts": {
