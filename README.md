@@ -4,7 +4,7 @@
 
 [Connect](http://www.senchalabs.org/connect/) middleware which uses the client useragent to detect mobile and tablet devices.
 
-Adds boolean `mobile` and `tablet` properties to `req`.
+Adds boolean `mobile`, `phone`, and `tablet` properties to `req`.
 
 ## Note
 
@@ -21,6 +21,7 @@ For all routes using Connect or [Express](http://expressjs.com/).
     ...
     // inside any route
     console.log(req.mobile);
+    console.log(req.phone);
     console.log(req.tablet);
 
 For single routes using Express.
@@ -30,6 +31,7 @@ For single routes using Express.
     ...
     app.get('/', checkMobile(), function (req, res) {
       console.log(req.mobile);
+      console.log(req.phone);
       console.log(req.tablet);
     });
 
