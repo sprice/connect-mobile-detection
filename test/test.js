@@ -28,7 +28,7 @@ describe('Clients with no useragents', function () {
 
 describe('Mobile useragents', function () {
 
-  it('should be mobile but not tablet', function (done) {
+  it('should be mobile and phone but not tablet', function (done) {
 
     for (var agent_index = 0; agent_index < useragents.mobile.length; agent_index++) {
     
@@ -39,6 +39,7 @@ describe('Mobile useragents', function () {
       mobile_detection(req, res, next);
 
       assert.equal(req.mobile, true);
+      assert.equal(req.phone, true);
       assert.equal(req.tablet, false);
     }
 
@@ -49,7 +50,7 @@ describe('Mobile useragents', function () {
 
 describe('Tablet useragents', function () {
 
-  it('should be mobile and tablet', function (done) {
+  it('should be mobile and tablet but not phone', function (done) {
 
     for (var agent_index = 0; agent_index < useragents.tablet.length; agent_index++) {
     
@@ -60,6 +61,7 @@ describe('Tablet useragents', function () {
       mobile_detection(req, res, next);
 
       assert.equal(req.mobile, true);
+      assert.equal(req.phone, false);
       assert.equal(req.tablet, true);
     }
 
@@ -70,7 +72,7 @@ describe('Tablet useragents', function () {
 
 describe('Desktop useragents', function () {
 
-  it('should not be mobile and not tablet', function (done) {
+  it('should not be mobile, phone or tablet', function (done) {
 
     for (var agent_index = 0; agent_index < useragents.desktop.length; agent_index++) {
     
@@ -81,6 +83,7 @@ describe('Desktop useragents', function () {
       mobile_detection(req, res, next);
 
       assert.equal(req.mobile, false);
+      assert.equal(req.phone, false);
       assert.equal(req.tablet, false);
     }
 
